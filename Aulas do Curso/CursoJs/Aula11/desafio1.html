@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Estrangeiro</title>
+</head>
+<body>
+    <h1>Verificar Estrangeiro</h1>
+    <div>
+        Digite o pais que você nasceu : <input type="text" id="paisNascimento"> 
+        
+    </div>
+
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="Resultado">
+
+    </div>
+
+    <script>
+        function verificar()
+        {
+
+            var pais  = document.getElementById("paisNascimento")
+            var res = document.getElementById('Resultado')
+            var valor = String(pais.value)
+
+
+            if ( valor == 'Brasil')
+            {
+                res.innerText = "Você é Brasileiro"
+
+            }else 
+            {
+                res.innerText = "Você é Estrangeiro"
+            }
+
+
+           
+
+        }
+        
+
+    </script>
+   
+</body>
+</html>
